@@ -5,6 +5,7 @@
  * main.c
  */
 
+// start to read vsftpd code 6.30.2014
 #include "session.h"
 #include "utility.h"
 #include "tunables.h"

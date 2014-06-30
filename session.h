@@ -1,3 +1,6 @@
+// encoding is a bit sophisticated, like file encoding, screen encoding, system encoding
+// some absurd thing happened, so i have to comment in english
+// after this problem is solved, i would comment in chinese:)
 #ifndef VSF_SESSION_H
 #define VSF_SESSION_H
 
