@@ -7,6 +7,7 @@
 #include "filesize.h"
 #endif
 
+// how to initialize such structure
 struct mystr
 {
   char* PRIVATE_HANDS_OFF_p_buf;

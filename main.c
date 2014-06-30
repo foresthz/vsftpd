@@ -36,6 +36,7 @@ static void limits_init(void);
 int
 main(int argc, const char* argv[])
 {
+  // lot's of information is stored in this structure 哈哈
   struct vsf_session the_session =
   {
     /* Control connection */

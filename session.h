@@ -20,9 +20,11 @@ struct mystr_list;
  */
 struct vsf_session
 {
+  // ftp protocol used two connections, one for control, one for data transfer
   /* Details of the control connection */
   struct vsf_sysutil_sockaddr* p_local_addr;
   struct vsf_sysutil_sockaddr* p_remote_addr;
+  // why use a char pointer here
   char* p_control_line_buf;
   int idle_timeout;
   int data_timeout;
@@ -55,7 +57,8 @@ struct vsf_session
 
   /* Details of FTP session state */
   struct mystr_list* p_visited_dir_list;
-
+  
+  // id is a number
   /* Details of userids which are interesting to us */
   int anon_ftp_uid;
   int guest_user_uid;
@@ -94,6 +97,7 @@ struct vsf_session
   /* Secure connections state */
   int control_use_ssl;
   int data_use_ssl;
+  // what is void pointer
   void* p_ssl_ctx;
   void* p_control_ssl;
   void* p_data_ssl;
