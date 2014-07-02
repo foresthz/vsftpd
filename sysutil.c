@@ -85,6 +85,7 @@ static int s_io_handler_running;
 struct vsf_sysutil_sockaddr
 {
 // the following variables share the same storage region
+// why we use union here, the underlying implementation from assembly perpective
   union
   {
     struct sockaddr u_sockaddr;

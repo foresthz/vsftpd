@@ -44,6 +44,7 @@ main(int argc, const char* argv[])
     /* Data connection */
     -1, 0, -1, 0, 0, 0, 0,
     /* Login */
+    // Macros are used here
     1, 0, INIT_MYSTR, INIT_MYSTR,
     /* Protocol state */
     0, 1, INIT_MYSTR, 0, 0,
