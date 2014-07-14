@@ -266,7 +266,8 @@ tunables_load_defaults()
   install_str_setting("/etc/vsftpd.chroot_list", &tunable_chroot_list_file);
   install_str_setting("ftp", &tunable_pam_service_name);
   install_str_setting("ftp", &tunable_guest_username);
-  install_str_setting("/etc/vsftpd.user_list", &tunable_userlist_file);
+  install_str_setting("//home/forest/code/vsftpd/userlist", &tunable_userlist_file);
+//  install_str_setting("/etc/vsftpd.user_list", &tunable_userlist_file);
   install_str_setting(0, &tunable_anon_root);
   install_str_setting(0, &tunable_local_root);
   install_str_setting(0, &tunable_banner_file);

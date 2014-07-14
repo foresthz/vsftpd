@@ -116,6 +116,7 @@ main(int argc, const char* argv[])
   /* Parse default config file if necessary */
   if (!config_loaded) {
     struct vsf_sysutil_statbuf* p_statbuf = 0;
+	// read configuration
     int retval = vsf_sysutil_stat(VSFTP_DEFAULT_CONFIG, &p_statbuf);
     if (!vsf_sysutil_retval_is_error(retval))
     {

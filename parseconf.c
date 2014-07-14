@@ -157,7 +157,8 @@ parseconf_str_array[] =
   { "ftpd_banner", &tunable_ftpd_banner },
   { "banned_email_file", &tunable_banned_email_file },
   { "chroot_list_file", &tunable_chroot_list_file },
-  { "pam_service_name", &tunable_pam_service_name },
+// here are options, which are read from config file, why pam service not works well for me?
+{ "pam_service_name", &tunable_pam_service_name },
   { "guest_username", &tunable_guest_username },
   { "userlist_file", &tunable_userlist_file },
   { "anon_root", &tunable_anon_root },
