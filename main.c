@@ -24,6 +24,10 @@
 #include "vsftpver.h"
 #include "ssl.h"
 
+#include<stdlib.h>
+#include<stdio.h>
+#include<string.h>
+
 /*
  * Forward decls of helper functions
  */
