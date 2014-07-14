@@ -8,6 +8,7 @@
 #endif
 
 // how to initialize such structure
+// used to load config files
 struct mystr
 {
   char* PRIVATE_HANDS_OFF_p_buf;
