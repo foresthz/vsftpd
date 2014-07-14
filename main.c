@@ -45,9 +45,9 @@ main(int argc, const char* argv[])
   char path_buf[1024];
 	getcwd(path_buf, sizeof(path_buf));
 	// the config file should be the file in current dir, not the one in /etc/
-	const char* path = strcat(path_buf, "me.conf");
-	printf("path of configure file: %s", path);
-	
+	const char* path = strcat(path_buf, "\/me.conf");
+	printf("path of configure file: %s\n", path);
+  fflush(stdout);	
 
   // lot's of information is stored in this structure 哈哈
   struct vsf_session the_session =
@@ -132,8 +132,8 @@ main(int argc, const char* argv[])
 	// read configuration
 
 		// cannot use variable, or 500 error would happen
-    int retval = vsf_sysutil_stat(VSFTP_DEFAULT_CONFIG, &p_statbuf);
-		// int retval = vsf_sysutil_stat(path, &p_statbuf);
+//    int retval = vsf_sysutil_stat(VSFTP_DEFAULT_CONFIG, &p_statbuf);
+		 int retval = vsf_sysutil_stat(path, &p_statbuf);
     if (!vsf_sysutil_retval_is_error(retval))
     {
       vsf_parseconf_load_file(VSFTP_DEFAULT_CONFIG, 1);
