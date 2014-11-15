@@ -1,4 +1,5 @@
 userlist
 *.o
+*.swp
 tags
 vsftpd

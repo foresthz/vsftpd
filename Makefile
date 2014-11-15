@@ -10,6 +10,7 @@ CFLAGS = -g
 	#-pedantic -Wconversion
 
 # will this script reture a value?
+# what path will this script find?
 LIBS	=	`./vsf_findlibs.sh`
 LINK	=	-Wl,-s
 LDFLAGS	=	-fPIE -pie -Wl,-z,relro -Wl,-z,now
