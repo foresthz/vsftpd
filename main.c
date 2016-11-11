@@ -45,7 +45,8 @@ main(int argc, const char* argv[])
   char path_buf[1024];
 	getcwd(path_buf, sizeof(path_buf));
 	// the config file should be the file in current dir, not the one in /etc/
-	const char* path = strcat(path_buf, "\/me.conf");
+	// const char* path = strcat(path_buf, "\/me.conf");
+	const char* path = strcat(path_buf, "/conf/myftp.conf");
 	printf("path of configure file: %s\n", path);
   fflush(stdout);	
 
@@ -136,7 +137,8 @@ main(int argc, const char* argv[])
 		 int retval = vsf_sysutil_stat(path, &p_statbuf);
     if (!vsf_sysutil_retval_is_error(retval))
     {
-      vsf_parseconf_load_file(VSFTP_DEFAULT_CONFIG, 1);
+      // vsf_parseconf_load_file(VSFTP_DEFAULT_CONFIG, 1);
+      vsf_parseconf_load_file("./conf/myftp.conf", 1);
     }
     vsf_sysutil_free(p_statbuf);
   }
